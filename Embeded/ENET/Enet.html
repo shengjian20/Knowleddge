@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>enet 入门</title>
+    <style>
+        /* 全局样式设置 */
+        body {
+            font-family: JetBrains Mono Nerd Font, '思源黑体', Arial, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            margin: 20px;
+            /* 使用本地图片作为背景 */
+            background-image: url('./picture/bocchi.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        /* 内容容器 */
+        .content-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: rgba(233, 236, 239, 0.9);
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(249, 249, 249, 0.9);
+        }
+        
+        /* 分别设置h1和h2的样式 */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        h2 {
+            /* 不设置text-align，默认左对齐 */
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>enet 入门</h1>
+        <h2>OSI 7层模型</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>层级</th>
+                    <th>名称</th>
+                    <th>主要功能</th>
+                    <th>典型协议</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7</td>
+                    <td>应用层</td>
+                    <td>为用户提供应用服务</td>
+                    <td>HTTP, FTP, SMTP</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>表示层</td>
+                    <td>数据格式转换、加密</td>
+                    <td>JPEG, MP3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>会话层</td>
+                    <td>建立、管理、终止会话</td>
+                    <td>NetBIOS, RPC</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>传输层</td>
+                    <td>端到端的数据传输</td>
+                    <td>TCP, UDP</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>网络层</td>
+                    <td>路由选择、网络互联</td>
+                    <td>IP, ICMP, ARP</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>数据链路层</td>
+                    <td>差错检测、帧同步</td>
+                    <td>Ethernet, PPP</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>物理层</td>
+                    <td>物理介质连接</td>
+                    <td>RS-232, Ethernet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
